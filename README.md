@@ -189,6 +189,30 @@ python index.py --engine handbrake -i input.mp4 -q 20 --preset slow --subtitle
 
 4. 对于FFmpeg，推荐的CRF值范围是28-31，值越低质量越高但文件越大；对于HandBrakeCLI，质量值范围是0-51，同样值越低质量越高。
 
+## 网站部署
+
+本仓库包含视频H264转H265转换工具的官方网站源码，用于展示工具功能、提供下载链接。
+
+### 网站结构
+
+```
+/
+├── index.html           # 主页面HTML文件
+├── resources/           # 资源文件夹
+│   ├── favicon.ico      # 网站图标
+│   └── screenshots/     # 应用界面截图
+└── README.md           # 本说明文件
+```
+
+### 部署步骤
+
+1. 创建代码托管平台仓库（如GitHub、Gitee等）
+2. 上传网站文件（index.html和resources文件夹）
+3. 开启Pages服务
+4. 配置部署分支和目录
+
+详细部署步骤请参考网站源码。
+
 ## 许可证
 
 MIT

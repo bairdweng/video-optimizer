@@ -1,0 +1,53 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 窗口背景 -->
+  <rect width="800" height="450" fill="#f0f0f0" rx="8" ry="8"/>
+  
+  <!-- 窗口标题栏 -->
+  <rect width="800" height="40" fill="#e0e0e0" rx="8" ry="8"/>
+  <text x="400" y="25" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">小压工坊</text>
+  
+  <!-- 关闭按钮 -->
+  <circle cx="770" cy="20" r="10" fill="#ff5f56"/>
+  <path d="M767 17 L773 23 M767 23 L773 17" stroke="white" stroke-width="2"/>
+  
+  <!-- 主要内容区域 -->
+  <rect x="20" y="60" width="760" height="370" fill="white" rx="4" ry="4"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#667eea" font-weight="bold">小压工坊 - 视频压缩工具</text>
+  
+  <!-- 文件选择区域 -->
+  <rect x="50" y="120" width="700" height="80" fill="#f9f9f9" rx="4" ry="4"/>
+  <text x="60" y="150" font-family="Arial, sans-serif" font-size="16" fill="#666">输入文件:</text>
+  <rect x="140" y="140" width="450" height="30" fill="white" stroke="#ddd" rx="2" ry="2"/>
+  <text x="150" y="160" font-family="Arial, sans-serif" font-size="12" fill="#999">视频文件路径显示区域</text>
+  <rect x="600" y="140" width="120" height="30" fill="#667eea" rx="2" ry="2"/>
+  <text x="660" y="160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">选择文件</text>
+  
+  <!-- 输出文件区域 -->
+  <text x="60" y="190" font-family="Arial, sans-serif" font-size="16" fill="#666">输出文件:</text>
+  <rect x="140" y="180" width="580" height="30" fill="white" stroke="#ddd" rx="2" ry="2"/>
+  <text x="150" y="200" font-family="Arial, sans-serif" font-size="12" fill="#999">输出路径将自动生成</text>
+  
+  <!-- 进度条 -->
+  <text x="60" y="240" font-family="Arial, sans-serif" font-size="16" fill="#666">压缩进度:</text>
+  <rect x="140" y="230" width="580" height="20" fill="#eee" stroke="#ddd" rx="10" ry="10"/>
+  <rect x="140" y="230" width="348" height="20" fill="#667eea" rx="10" ry="10"/>
+  <text x="430" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">60%</text>
+  
+  <!-- 按钮区域 -->
+  <rect x="250" y="280" width="150" height="40" fill="#667eea" rx="20" ry="20"/>
+  <text x="325" y="305" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">开始压缩</text>
+  
+  <rect x="420" y="280" width="150" height="40" fill="#f0f0f0" stroke="#ddd" rx="20" ry="20"/>
+  <text x="495" y="305" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">取消</text>
+  
+  <!-- 状态信息 -->
+  <text x="60" y="350" font-family="Arial, sans-serif" font-size="14" fill="#4caf50">状态: 压缩中...</text>
+  
+  <!-- 压缩信息预览 -->
+  <text x="60" y="380" font-family="Arial, sans-serif" font-size="14" fill="#666">压缩前: 100.00 MB | 压缩后: 正在计算...</text>
+  
+  <!-- 底部信息 -->
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#999">H.265编码 | 适合抖音等平台分享</text>
+</svg>
