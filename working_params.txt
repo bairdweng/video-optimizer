@@ -1,0 +1,2 @@
+# 成功的FFmpeg参数
+跑量优质.mov -map 0:v -map 0:a -c:v libx265 -crf 28 -preset medium -pix_fmt yuv420p -color_range tv -colorspace bt709 -color_trc bt709 -color_primaries bt709 -c:a aac -b:a 128k -movflags +faststart -strict experimental -threads 0 test_exact_output_1761186629.mp4

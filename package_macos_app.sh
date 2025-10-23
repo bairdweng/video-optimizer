@@ -5,7 +5,7 @@
 
 set -e
 
-echo "=== 视频H264转H265工具 macOS打包脚本 ==="
+echo "=== 小压工坊 macOS打包脚本 ==="
 echo "开始准备打包环境..."
 
 # 检查Python环境
@@ -191,16 +191,16 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                upx_exclude=[],
-               name='视频H264转H265工具')
+               name='小压工坊')
 
 app = BUNDLE(coll,
-             name='视频H264转H265工具.app',
+             name='小压工坊.app',
              icon='resources/icon.icns' if os.path.exists('resources/icon.icns') else None,
              bundle_identifier='com.videooptimizer.converter',
              info_plist={
                  'NSHighResolutionCapable': True,
-                 'CFBundleName': '视频H264转H265工具',
-                 'CFBundleDisplayName': '视频H264转H265工具',
+                 'CFBundleName': '小压工坊',
+                 'CFBundleDisplayName': '小压工坊',
                  'CFBundleVersion': '1.0',
                  'CFBundleShortVersionString': '1.0',
                  'LSMinimumSystemVersion': '10.13',
@@ -222,9 +222,9 @@ echo "开始打包应用..."
 PYTHONPATH=$(python3 -c "import sys; print(':'.join(sys.path))") pyinstaller video_converter_macos.spec
 
 # 检查打包结果
-if [ -d "dist/视频H264转H265工具.app" ]; then
+if [ -d "dist/小压工坊.app" ]; then
     echo "✅ 应用打包成功！"
-    echo "📁 应用位置: dist/视频H264转H265工具.app"
+    echo "📁 应用位置: dist/小压工坊.app"
     echo "\n📝 使用说明:"
     echo "1. 请将应用拖拽到Applications文件夹以完成安装"
     echo "2. 首次打开时，右键点击应用并选择'打开'"
